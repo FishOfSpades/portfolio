@@ -3,43 +3,92 @@
 <head>
     <title>My Personal Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnHzKYsEofFFCJTLEMEYE15Xj95J67z8L719z04" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#blog">Blog</a></li>
-            </ul>
+    <header class="bg-dark text-white text-center py-5">
+        <h1 class="display-4">Welcome to My Portfolio</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm a passionate cybersecurity professional with a focus on penetration testing and ethical hacking. I enjoy learning and sharing knowledge through my blog.</p>
+    <section id="about" class="container my-5">
+        <h2 class="text-center mb-4">About Me</h2>
+        <p class="lead text-center">I'm a passionate cybersecurity professional with a focus on penetration testing and ethical hacking. I enjoy learning and sharing knowledge through my blog.</p>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="projects/project1.html">Project 1</a></li>
-            <li><a href="projects/project2.html">Project 2</a></li>
-        </ul>
+    <section id="projects" class="container my-5">
+        <h2 class="text-center mb-4">Projects</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="projects/project1.jpg" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">This is a description of Project 1.</p>
+                        <a href="projects/project1.html" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="projects/project2.jpg" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 2</h5>
+                        <p class="card-text">This is a description of Project 2.</p>
+                        <a href="projects/project2.html" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="blog">
-        <h2>Blog</h2>
-        <ul>
-            <li><a href="blog/post1.html">Penetration Testing Walkthrough: Web Application</a></li>
-            <li><a href="blog/post2.html">Penetration Testing Walkthrough: Network Security</a></li>
-        </ul>
+    <section id="blog" class="container my-5">
+        <h2 class="text-center mb-4">Blog</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="blog/post1.jpg" class="card-img-top" alt="Penetration Testing Walkthrough: Web Application">
+                    <div class="card-body">
+                        <h5 class="card-title">Penetration Testing Walkthrough: Web Application</h5>
+                        <p class="card-text">This is a walkthrough of a penetration testing exercise on a web application.</p>
+                        <a href="blog/post1.html" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="blog/post2.jpg" class="card-img-top" alt="Penetration Testing Walkthrough: Network Security">
+                    <div class="card-body">
+                        <h5 class="card-title">Penetration Testing Walkthrough: Network Security</h5>
+                        <p class="card-text">This is a walkthrough of a penetration testing exercise on network security.</p>
+                        <a href="blog/post2.html" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
+    <footer class="bg-dark text-white text-center py-4 mt-5">
         <p>&copy; 2023 My Portfolio. All rights reserved.</p>
     </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2rZNYeE0LW6g8WfLbceB1l9VwBvTAKz13321L06011121L060111" crossorigin="anonymous"></script>
 </body>
 </html>
